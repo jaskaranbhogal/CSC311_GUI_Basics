@@ -1,0 +1,5 @@
+.name-label {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: darkblue;
+}

@@ -4,9 +4,11 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Circle?>
 
-<?import javafx.scene.control.Button?>
 <VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml" stylesheets="@style.css"
       fx:controller="com.example.csc311_gui_basics.HelloController">
     <padding>
@@ -22,4 +24,18 @@
             <Image url="@headshot.jpeg"/>
         </image>
     </ImageView>
+
+    <StackPane>
+        <Circle radius="55.0" stroke="darkblue" strokeWidth="3.0">
+            <fill>
+                <Color red="0.95" green="0.95" blue="0.95"/>
+            </fill>
+        </Circle>
+
+        <ImageView fitWidth="90.0" fitHeight="90.0" preserveRatio="true">
+            <image>
+                <Image url="@farmingdale.jpeg"/>
+            </image>
+        </ImageView>
+    </StackPane>
 </VBox>

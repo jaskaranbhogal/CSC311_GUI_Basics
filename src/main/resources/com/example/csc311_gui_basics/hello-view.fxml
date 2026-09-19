@@ -53,10 +53,13 @@
                 stroke="#29b6e9"
                 strokeWidth="3.0"/>
 
-        <ImageView fitWidth="90.0" fitHeight="90.0" preserveRatio="true">
+        <ImageView fitWidth="96.0" fitHeight="96.0" preserveRatio="true" smooth="true">
             <image>
                 <Image url="@farmingdale.jpeg"/>
             </image>
+            <clip>
+                <Circle centerX="48.0" centerY="48.0" radius="46.0"/>
+            </clip>
         </ImageView>
     </StackPane>
 

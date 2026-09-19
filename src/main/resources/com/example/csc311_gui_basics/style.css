@@ -1,15 +1,58 @@
+.page {
+    -fx-background-color: #0f1b2d;
+    -fx-font-family: "Verdana";
+}
+
 .name-label {
     -fx-font-size: 28px;
     -fx-font-weight: bold;
-    -fx-text-fill: darkblue;
+    -fx-text-fill: white;
 }
 
 .bio-label {
     -fx-font-size: 14px;
+    -fx-text-fill: #aebed3;
     -fx-text-alignment: center;
 }
 
 .section-label {
     -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.separator .line {
+    -fx-border-color: #31445e;
+    -fx-border-width: 1 0 0 0;
+}
+
+.progress-bar {
+    -fx-accent: #29b6e9;
+}
+
+.progress-bar > .track {
+    -fx-background-color: #1d2d44;
+}
+
+.progress-bar > .bar {
+    -fx-background-color: #29b6e9;
+}
+
+.contact-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #d8e4f2;
+    -fx-border-color: #637a98;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-padding: 8px 16px;
+    -fx-font-weight: bold;
+}
+
+.work-button {
+    -fx-background-color: #29b6e9;
+    -fx-text-fill: #0f1b2d;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-padding: 8px 16px;
     -fx-font-weight: bold;
 }

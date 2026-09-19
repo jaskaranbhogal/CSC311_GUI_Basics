@@ -3,3 +3,13 @@
     -fx-font-weight: bold;
     -fx-text-fill: darkblue;
 }
+
+.bio-label {
+    -fx-font-size: 14px;
+    -fx-text-alignment: center;
+}
+
+.section-label {
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+}

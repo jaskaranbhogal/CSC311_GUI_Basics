@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Separator?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.StackPane?>
@@ -9,15 +12,18 @@
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.shape.Circle?>
 
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml" stylesheets="@style.css"
+<VBox alignment="CENTER" spacing="14.0" xmlns:fx="http://javafx.com/fxml" stylesheets="@style.css"
       fx:controller="com.example.csc311_gui_basics.HelloController">
     <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="25.0"/>
     </padding>
 
     <Label text="Jaskaran Bhogal"
            styleClass="name-label"
-           rotate="-20"/>
+           alignment="CENTER"
+           textAlignment="CENTER"
+           rotate="-20"
+           translateY="-10.0"/>
 
     <ImageView fitWidth="170.0" fitHeight="170.0" preserveRatio="true">
         <image>
@@ -25,7 +31,18 @@
         </image>
     </ImageView>
 
-    <StackPane>
+    <Label fx:id="welcomeText"
+           text="Computer Science Student at Farmingdale State College"
+           styleClass="bio-label"
+           alignment="CENTER"
+           textAlignment="CENTER"
+           wrapText="true"
+           prefWidth="300.0"
+           maxWidth="300.0"/>
+
+    <Separator prefWidth="260.0"/>
+
+    <StackPane alignment="CENTER">
         <Circle radius="55.0" stroke="darkblue" strokeWidth="3.0">
             <fill>
                 <Color red="0.95" green="0.95" blue="0.95"/>
@@ -38,4 +55,13 @@
             </image>
         </ImageView>
     </StackPane>
+
+    <Label text="Degree Progress: 71%"
+           styleClass="section-label"
+           alignment="CENTER"
+           textAlignment="CENTER"/>
+
+    <ProgressBar progress="0.71" prefWidth="220.0"/>
+
+    <Button text="Say Hello" onAction="#onHelloButtonClick"/>
 </VBox>

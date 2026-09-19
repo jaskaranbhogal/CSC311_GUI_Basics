@@ -2,6 +2,8 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.VBox?>
 
 <?import javafx.scene.control.Button?>
@@ -11,7 +13,13 @@
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
     </padding>
 
-    <Label text = "Jaskaran Bhogal"
+    <Label text="Jaskaran Bhogal"
            styleClass="name-label"
            rotate="-20"/>
+
+    <ImageView fitWidth="170.0" fitHeight="170.0" preserveRatio="true">
+        <image>
+            <Image url="@headshot.jpeg"/>
+        </image>
+    </ImageView>
 </VBox>
